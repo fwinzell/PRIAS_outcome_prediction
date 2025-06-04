@@ -1,0 +1,8 @@
+supervised/saved_models/
+supervised/saved_weights/
+supervised/pl/saved_models/
+supervised/pl/saved_weights/
+*.ckpt
+*.pth
+kod_Gleason_score/
+autoencoder/
