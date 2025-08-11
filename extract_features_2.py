@@ -336,8 +336,8 @@ def load_uni():
     model.eval()
     return model, transform
 
-def load_uni_v2():
-    login()  # login with your User Access Token, found at https://huggingface.co/settings/tokens
+def load_uni_v2(token):
+    login(token = token, add_to_git_credential=False)  # login with your User Access Token, found at https://huggingface.co/settings/tokens
 
     # pretrained=True needed to load UNI2-h weights (and download weights for the first time)
     timm_kwargs = {
